@@ -1,6 +1,6 @@
 <?php
 
-namespace Pma\DoctrineBundle\Subscriber;
+namespace Avanzu\Doctrine\PrefixBundle\Subscriber;
 
 use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
 
