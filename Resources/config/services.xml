@@ -6,12 +6,11 @@
 
     <parameters>
         <parameter key="avanzu_doctrine.db.prefix.class">Avanzu\Doctrine\PrefixBundle\Subscriber\TablePrefixSubscriber</parameter>
-        <parameter key="avanzu_doctrine_prefix"></parameter>
     </parameters>
 
     <services>
         <service id="avanzu_doctrine.table_prefix" class="%avanzu_doctrine.db.prefix.class%">
-            <argument>%avanzu_doctrine_prefix%</argument>
+            <argument>%database_table_prefix%</argument>
             <tag name="doctrine.event_subscriber" />
         </service>
     </services>
