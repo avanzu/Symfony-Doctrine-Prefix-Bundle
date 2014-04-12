@@ -19,6 +19,7 @@ class Configuration implements ConfigurationInterface
     {
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('avanzu_doctrine_prefix');
+        $rootNode->children()->scalarNode('prefix')->defaultValue('')->end()->end();
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for
