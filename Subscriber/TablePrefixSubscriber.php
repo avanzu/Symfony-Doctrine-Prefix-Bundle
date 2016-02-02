@@ -11,7 +11,7 @@ use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
  */
 class TablePrefixSubscriber implements \Doctrine\Common\EventSubscriber {
 
-    protected $prefix = '';
+    protected $prefix;
 
     public function __construct($prefix = '') {
         $this->prefix = (string) $prefix;
